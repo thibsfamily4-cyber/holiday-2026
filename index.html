@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Jason &amp; Lorraine Thibodeau's Holiday Party</title>
+<meta name="description" content="You're invited! Friday, December 11, 2026, 6 to 9 PM. Tap to play the invite (with music) and RSVP.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="You're invited: Jason &amp; Lorraine Thibodeau's Holiday Party">
+<meta property="og:description" content="Friday, December 11, 2026, 6 to 9 PM. Tap to watch the invite and RSVP.">
+<meta property="og:image" content="https://thibsfamily4-cyber.github.io/holiday-2026/poster.jpg">
+<meta property="og:url" content="https://thibsfamily4-cyber.github.io/holiday-2026/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#0a2a20;color:#f4ecd8;font-family:Georgia,'Times New Roman',serif}
+.wrap{max-width:520px;margin:0 auto;padding:18px 16px 40px;text-align:center}
+.card{border:2px solid #d4af6a;background:#0f3d2e;padding:26px 18px 30px}
+.eyebrow{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:#d4af6a}
+h1{font-weight:normal;font-size:30px;line-height:1.2;margin:12px 0 0}h1 span{color:#e9c984}
+.rule{width:100px;height:2px;background:#d4af6a;margin:18px auto}
+.date{font-size:24px;color:#e9c984}.time{font-size:19px;letter-spacing:3px;margin-top:4px}
+.sm{font-size:16px;line-height:1.5;color:#e6dcc2;margin-top:8px}
+.teams{margin-top:6px}.teams b{display:block;font-size:22px;line-height:1.35}.teams i{color:#d4af6a;font-style:normal}
+.vid{position:relative;margin:22px auto 0;width:min(100%,360px);aspect-ratio:9/16;background:#000;border:2px solid #d4af6a;overflow:hidden}
+video{width:100%;height:100%;display:block;object-fit:cover}
+.play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border:0;width:100%;cursor:pointer;color:#f4ecd8;font:inherit;background:linear-gradient(rgba(6,32,26,.35),rgba(6,32,26,.6))}
+.play .c{width:84px;height:84px;border-radius:50%;background:#d4af6a;display:flex;align-items:center;justify-content:center}
+.play .c:after{content:"";margin-left:8px;border-left:26px solid #0f3d2e;border-top:16px solid transparent;border-bottom:16px solid transparent}
+.play .t{font-size:18px;letter-spacing:2px;text-transform:uppercase;font-weight:bold}
+.btn{display:block;margin:26px auto 0;max-width:320px;padding:16px 20px;background:#d4af6a;color:#0f3d2e;border:2px solid #d4af6a;border-radius:4px;font-size:19px;letter-spacing:3px;text-transform:uppercase;font-weight:bold;text-decoration:none}
+.sign{font-size:24px;font-style:italic;color:#e9c984;margin-top:28px}.sign small{display:block;font-size:19px;font-style:normal;color:#f4ecd8;margin-top:4px}
+.credit{font-size:11px;line-height:1.5;color:#9fb3a8;margin-top:18px}.credit a{color:#9fb3a8}
+</style></head><body><div class="wrap"><div class="card">
+<div class="eyebrow">You're invited</div>
+<h1>Jason &amp; Lorraine Thibodeau's<br><span>Holiday Party</span></h1>
+<div class="rule"></div>
+<div class="date">Friday, December 11, 2026</div><div class="time">6 TO 9 PM</div>
+<div class="sm">At our home (address sent after you RSVP)<br><i>Plus one welcome</i></div>
+<div class="eyebrow" style="margin-top:22px">With the teams of</div>
+<div class="teams"><b>OriginPoint Huntington Beach</b><i>&amp;</i><b>On Demand Escrow</b></div>
+<div class="vid" id="vid"><video id="v" src="invite.mp4" poster="poster.jpg" playsinline controls preload="metadata"></video>
+<button class="play" id="p" aria-label="Tap to play with music"><span class="c"></span><span class="t">Tap to play<br>with music</span></button></div>
+<a class="btn" href="https://forms.gle/eW2tB3q9Q1MDFGn26">RSVP</a>
+<div class="sign">Merry Christmas!<small>Jason &amp; Lorraine</small></div>
+</div>
+<div class="credit">Music: "Dance of the Sugar Plum Fairy" by Kevin MacLeod (<a href="https://incompetech.com">incompetech.com</a>), licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</div>
+</div>
+<script>
+var v=document.getElementById('v'),p=document.getElementById('p');
+v.controls=false;
+p.addEventListener('click',function(){v.muted=false;v.controls=true;p.style.display='none';v.play();});
+v.addEventListener('ended',function(){p.style.display='flex';v.controls=false;});
+</script></body></html>
